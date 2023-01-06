@@ -1,0 +1,140 @@
+
+//@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@500&display=swap');
+
+*{
+	padding: 0;
+	margin: 0;
+}
+
+body {
+	font-family: 'Open Sans Condensed', sans-serif; // this fonts family keep the size of its width
+	//overflow: hidden;
+	//background: linear-gradient( #f4f4ed, white);
+	background: orange;
+}
+
+.container{
+	border: 1px solid black;
+	width: 90%;
+	//height: 100vh;
+	margin: auto;
+	display: flex;
+	//justify-content: center;
+	//align-items: center;
+}
+
+.groceries{
+	border: 1px solid black;
+	width: 600px;
+	min-height: 100vh;
+	margin: auto;
+	background: white;
+	box-shadow: 10px 10px 24px 0 black;
+}
+
+.groceries h1{
+	font-size: 2.5rem;
+	margin-top: 1em;
+}
+
+.groceries i{
+	font-size: 2rem;
+	color: orange;
+}
+
+.groceries input {
+	font-family: inherit;
+	outline: 0;
+	border: 0;
+	border-bottom: 3px solid black;
+	width: 70%;
+	font-size: 1.5rem;
+}
+
+#allItems h2{
+	margin-left: 50px;
+	margin-right: 10px;
+	margin-top: 15px;
+	font-size: 1.5rem;
+}
+
+
+
+ #userInput {
+ //	box-sizing: border-box;
+//	width: 100%;
+//	padding: 40px 5px ;
+//	background: whitesmoke;
+//	text-align: right;
+//	direction: ltr;
+//	outline: none;
+//	border: none;
+ }
+
+ .btn{
+	width: 24%;
+	height: 45px;
+	border-radius: 3px;
+	border: none;
+	outline: none;
+	margin-top: 3px;
+	background: lightblue;
+ }
+
+ .btnEqual{
+	width: 99.2%;
+	height: 45px;
+	border-radius: 3px;
+	border: none;
+	outline: none;
+	margin-top: 3px;
+	background: lightblue;
+ }
+
+ .btn:hover, .btnEqual:hover {
+	background-color: rgba(128, 128, 120, 0.1);
+ }
+ 
+ .digitalClock h1 {
+	display: inline-block;
+	margin: 0 10px;
+	font-weight: bold;
+	font-size: 5rem;
+ }
+
+ @media(max-width:768px) {
+	#bar1, #bar2, #bar3{
+		display: none;
+	}
+
+	.digitalClock{
+		text-align: center ;
+		width:100% ;
+	}
+ 	.digitalClock h1 {
+		display: block;
+ 	}
+ }
+
+
+ @media(max-width:480px) {
+ 	.groceries h1{
+		font-size: 1.5rem;
+ 	}
+ 	.groceries input{
+		font-size: 1rem;
+ 	}
+	.btn{
+		width: 23.4%;
+	}
+ 	.digitalClock h1 {
+		font-size: 4rem;
+ 	}
+ }
+ @media(max-width:320px) {
+	.btn{
+		width: 23%;
+	}
+ 	.digitalClock h1 {
+		font-size: 4rem;
+ 	}

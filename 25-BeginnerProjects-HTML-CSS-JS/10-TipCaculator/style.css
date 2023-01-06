@@ -1,0 +1,106 @@
+
+//@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@500&display=swap');
+
+*{
+//! padding: 0;
+//	margin: 0;
+}
+
+body {
+	height: 100vh;
+	font-family: 'Open Sans Condensed', sans-serif; // this fonts family keep the size of its width
+//	overflow: hidden;
+	background: conic-gradient(at 125% 50%, #b78cf7, #ff7c94, #ffcf0d, #ff7c94, #b78df7);
+//	background: orange;
+}
+
+.container{
+	border: 1px solid black;
+	width: 90%;
+	height: 100vh;
+	margin: auto;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.calculator{
+	border: 1px solid lightgrey;
+	background-color: whitesmoke;
+	border-radius: 5px;
+	width: 400px;
+	margin: auto;
+	padding: 0 30px;
+	font-size: 1rem;
+	box-shadow: 0 2px 4px 0 rba(0, 0, 0, 0.35);
+}
+
+.calculator button:hover {
+	background-color: rgba(0, 0, 120, 0.1);
+}
+
+#tip-amount{
+	visibility: hidden;
+	min-width:250px;
+	margin: auto;
+	background-color: limegreen;
+	color: white;
+	bottom: 30px;
+	text-align: center;
+	border-radius: 2px;
+	padding: 16px;
+	position: fixed;
+}
+
+#tip-amount.show{
+	visibility: visible;
+	-webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+	animation: fadein 0.5s, fadeout 0.5s 2.5s;
+}
+
+@-webkit-keyframes fadein {
+	from{bottom:0; opacity: 0;}
+	to {bottom:30px; opacity: 1;}
+}
+
+@keyframes fadein {
+	from{bottom:0; opacity: 0;}
+	to {bottom:30px; opacity: 1;}
+}
+
+@-webkit-keyframes fadeout {
+	from {bottom:30px; opacity: 1;}
+	to {bottom:0; opacity: 0;}
+}
+
+
+@keyframes fadeout {
+	from {bottom:30px; opacity: 1;}
+	to {bottom:0; opacity: 0;}
+}
+
+ @media(max-width:768px) {
+	#bar1, #bar2, #bar3{
+		display: none;
+	}
+
+	.digitalClock{
+		text-align: center ;
+		width:100% ;
+	}
+ 	.digitalClock h1 {
+		display: block;
+ 	}
+ }
+
+
+ @media(max-width:480px) {
+	.calculator input {
+		width: 85%;
+	}
+ }
+ @media(max-width:320px) {
+	.calculator input {
+		width: 80%;
+	}
+}
